@@ -29,25 +29,28 @@ button.addEventListener('click', getInputandCompare)
 // Función handler:
 function getInputandCompare () {
     // se accede al input.value y se muestra en consola
-    const inputNumber = input.value;
+    const inputNumber = parseInt(input.value);
     console.log(inputNumber);
-    // se genera un número al azar y se muestra en la consola
-    const randomNumber = getRandomNumber(100);
-    console.log(randomNumber);
     // se compara ese número con el del input = feedback en función de si es más alto/bajo/igual
-    if ((parseInt(inputNumber)) >= randomNumber) {
-        const feedbackValue = feedback.innerHTML;
-        feedbackValue = 'demasiado alto';
-        console.log(funcionaaa);
+    if (inputNumber > randomNumber) {
+        feedback.innerHTML = 'demasiado alto';
+    }
+    else if (inputNumber < randomNumber) {
+        feedback.innerHTML = 'demasiado bajo';
+    }
+    else if (inputNumber === randomNumber) {
+        feedback.innerHTML = '¡LO HAS CONSEGUIDO!';
     }
     // tras cada intento, se cuenta 1 en el contador
-
 }
     
 // Función de apoyo:contador de números aleatorios
 function getRandomNumber(max) {
     return Math.ceil(Math.random() * max);
   }
+// se genera un número al azar y se muestra en la consola
+const randomNumber = getRandomNumber(100);
+console.log(randomNumber);
   
   // píntame en la consola un número random hasta 100;
 //   console.log('> ' + getRandomNumber(100));
