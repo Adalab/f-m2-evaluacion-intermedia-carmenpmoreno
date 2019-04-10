@@ -42,6 +42,9 @@ function getInputandCompare () {
         feedback.innerHTML = '¡LO HAS CONSEGUIDO!';
     }
     // tras cada intento, se cuenta 1 en el contador
+        counter = 0;
+        let counterCurrent = parseInt(counter.innerHTML);
+        counterCurrent = counter + 1;
 }
     
 // Función de apoyo:contador de números aleatorios
@@ -51,6 +54,4 @@ function getRandomNumber(max) {
 // se genera un número al azar y se muestra en la consola
 const randomNumber = getRandomNumber(100);
 console.log(randomNumber);
-  
-  // píntame en la consola un número random hasta 100;
-//   console.log('> ' + getRandomNumber(100));
+
