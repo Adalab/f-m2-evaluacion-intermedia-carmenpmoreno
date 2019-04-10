@@ -41,11 +41,10 @@ function getInputandCompare () {
     else if (inputNumber === randomNumber) {
         feedback.innerHTML = '¡LO HAS CONSEGUIDO!';
     }
-    // tras cada intento, se cuenta 1 en el contador
-        counter = 0;
-        let counterCurrent = parseInt(counter.innerHTML);
-        counterCurrent = counter + 1;
 }
+    // tras cada intento, se cuenta 1 en el contador
+let counterCurrent = counter.innerHTML;
+counterCurrent = 0;
     
 // Función de apoyo:contador de números aleatorios
 function getRandomNumber(max) {
