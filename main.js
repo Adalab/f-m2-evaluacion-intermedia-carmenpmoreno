@@ -8,17 +8,19 @@ console.log('Hola');
 //  - Marca el número de intentos
 
 // CONSTANTES NECESARIAS
-    // botón
-    const button = document.querySelector('.button');
-    // input
-    const input = document.getElementById('number');
-    // feedback
-    const feedback = document.querySelector('.feedback');
-    // contador
-    let counter = document.querySelector('.counter');
-    console.log(button, input, feedback, counter);
-// Todo sucede al Al pulsar el botón: Listener sobre el botón
+// botón
+const button = document.querySelector('.button');
+// input
+const input = document.getElementById('number');
+// feedback
+const feedback = document.querySelector('.feedback');
+// contador
+let counter = document.querySelector('.counter');
+console.log(button, input, feedback, counter);
+
+//Listener sobre el botón
 button.addEventListener('click', getInputandCompare)
+
 // Función handler:
 function getInputandCompare () {
     // se accede al input.value y se muestra en consola
